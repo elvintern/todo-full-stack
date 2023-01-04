@@ -1,7 +1,7 @@
 {
-  "homepage": "https://elvintern.github.io/todo-full-stack",
   "name": "todo-full-stack",
   "version": "0.1.0",
+  "homepage": "https://elvintern.github.io/todo-full-stack",
   "description": "Todo Full Stack",
   "repository": "https://https://github.com/dev-academy-challenges/todo-full-stack",
   "main": "server/index.js",
