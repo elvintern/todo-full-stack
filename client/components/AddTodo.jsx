@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addNewTodo } from '../slices/todos'
 
-// eslint-disable-next-line no-unused-vars
 function AddTodo() {
   const dispatch = useDispatch()
   const [todo, setTodo] = useState('')
@@ -22,7 +21,6 @@ function AddTodo() {
         onChange={(e) => setTodo(e.target.value)}
         onKeyDown={handleKeyDown}
         value={todo}
-        // autoFocus={true}
       />
     </>
   )
