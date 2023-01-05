@@ -21,6 +21,7 @@ function Footer() {
   let leftItemNum = todos.filter((todo) => {
     return !todo.status
   }).length
+
   return (
     <>
       <span className="todo-count">{leftItemNum} item left</span>
