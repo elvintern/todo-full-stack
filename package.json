@@ -9,10 +9,10 @@
   },
   "main": "server/index.js",
   "scripts": {
-    "build": "run-p build:client build:server",
+    "build": "react-app-rewired build",
     "build:client": "npm run webpack -- --mode production",
     "build:server": "npm run knex -- migrate:latest",
-    "build-react": "react-app-rewired build",
+    "build-react": "run-p build:client build:server",
     "rewired-start": "react-app-rewired start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
