@@ -4,8 +4,8 @@ node_modules
 # Logs
 *.log
 
-# SQLite DBs
-*.sqlite3
+# # SQLite DBs
+# *.sqlite3
 
 # Webpack bundle
 server/public/bundle.js
@@ -19,4 +19,4 @@ server/public/styles.css.map
 coverage/*
 
 # Dotenv env settings
-.env
+# .env
