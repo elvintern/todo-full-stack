@@ -19,4 +19,4 @@ services:
         destination: web
   database:
     env:
-  DATABASE_URL: sqlite://server/db/dev.sqlite3
+  DATABASE_URL: sqlite:///server/db/dev.sqlite3
