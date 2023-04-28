@@ -1,0 +1,22 @@
+name: my-app
+env: production
+
+build:
+  frontend:
+    command: npm run build:client
+  backend:
+    command: npm run build:server
+  install: true
+
+services:
+  web:
+    port: 3000
+    command: npm run dev
+    env:
+      NODE_ENV: production
+    routes:
+      - path: /
+        destination: web
+  database:
+    env:
+  DATABASE_URL: sqlite://server/db/dev.sqlite3
