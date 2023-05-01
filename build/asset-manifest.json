@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/todo-full-stack/static/js/main.1cdada81.js",
+    "index.html": "/todo-full-stack/index.html",
+    "main.1cdada81.js.map": "/todo-full-stack/static/js/main.1cdada81.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1cdada81.js"
+  ]
+}
