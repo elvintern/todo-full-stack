@@ -3,11 +3,12 @@ env:
   NODE_ENV: production
 
 build:
+  install: true
+
   frontend:
     command: npm run build:client
   backend:
     command: npm run build:server
-  # install: true
 start:
   web: node server/index.js
 
