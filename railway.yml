@@ -1,12 +1,15 @@
 name: my-app
-env: production
+env:
+  NODE_ENV: production
 
 build:
   frontend:
     command: npm run build:client
   backend:
     command: npm run build:server
-  install: true
+  # install: true
+start:
+  web: node server/index.js
 
 services:
   web:
@@ -17,6 +20,5 @@ services:
     routes:
       - path: /
         destination: web
-  database:
-    env:
-  DATABASE_URL: sqlite:///server/db/dev.sqlite3
+  db:
+    image: postgres
