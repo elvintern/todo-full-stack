@@ -56,15 +56,16 @@ const todosSlice = createSlice({
   name: 'todos',
   initialState: [],
   reducers: {},
-  extraReducers: {
-    [fetchTodos.fulfilled]: (_, { payload }) => {
-      return payload
-    },
-    [addNewTodo.fulfilled]: (state, action) => action.payload,
-    [deleteTodo.fulfilled]: (state, action) => action.payload,
-    [updateTodo.fulfilled]: (state, action) => action.payload,
-    [clearCompleted.fulfilled]: (state, action) => action.payload,
-    [showFilteredTodos.fulfilled]: (state, action) => action.payload,
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchTodos.fulfilled, (_, { payload }) => {
+        return payload
+      })
+      .addCase(addNewTodo.fulfilled, (state, action) => action.payload)
+      .addCase(deleteTodo.fulfilled, (state, action) => action.payload)
+      .addCase(updateTodo.fulfilled, (state, action) => action.payload)
+      .addCase(clearCompleted.fulfilled, (state, action) => action.payload)
+      .addCase(showFilteredTodos.fulfilled, (state, action) => action.payload)
   },
 })
 
