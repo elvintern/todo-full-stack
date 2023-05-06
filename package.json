@@ -1,5 +1,4 @@
 {
-  "homepage": "https://elvintern.github.io/todo-full-stack",
   "name": "todo-full-stack",
   "version": "0.1.0",
   "description": "Todo Full Stack",
@@ -72,7 +71,6 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
     "express": "^4.17.2",
-    "gh-pages": "^4.0.0",
     "jest": "^27.5.1",
     "knex": "^2.3.0",
     "mini-css-extract-plugin": "^2.3.0",
